@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    *{
+      cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='18' height='22' viewport='0 0 100 100' style='fill:black;font-size:11px;'><text y='50%'>❤️</text></svg>") 16 0,auto; /*!emojicursor.app*/
+
+    }
+    body {
+      margin: 0;
+      background: #fffaf0;
+      overflow-x: hidden;
+    }
+
+    .collage {
+      display: flex;
+      overflow-x: auto;
+      white-space: nowrap;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .item {
+      height: 100%;
+      margin: 0;
+      border: 2px solid rgb(44, 204, 191);
+      object-fit: cover;
+      transition: width 0.2s ease-in;
+     
+    }
+
+    /* Cropping the width initially */
+    .item {
+      width: 15vw;
+      overflow: hidden;
+      
+    }
+
+    /* Expand on hover */
+    .item:hover {
+      width: 40vw;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <title>Hover Reveal Collage</title>
+</head>
+
+<body>
+  <div class="collage">
+    <img src="anya-kr.png" alt="Anya" class="item">
+    <img src="child.png" alt="Child" class="item">
+    <img src="photo1.png" alt="Photo" class="item">
+    <img src="she.png" alt="She" class="item">
+    <img src="she_friends.png" alt="Friends" class="item">
+    <img src="she_school.png" alt="School" class="item">
+    <img src="arrow.svg" class="item" onclick="location.href='../real_album/index.html'">
+  </div>
+</body>
+
+</html>
